@@ -1,8 +1,11 @@
 -- open file_browser with the path of the current buffer
 vim.api.nvim_set_keymap(
   'n',
-  '<space>f',
+  '<space>b',
   ':Telescope file_browser path=%:p:h select_buffer=true<CR>',
-  { noremap = true }
+  {
+    desc = 'File [B]rowser',
+    noremap = true
+  }
 )
 
